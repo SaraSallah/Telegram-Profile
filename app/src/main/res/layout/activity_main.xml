@@ -38,7 +38,7 @@
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_more_vert"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
         android:id="@+id/icBack"
@@ -48,7 +48,8 @@
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/name"
@@ -56,26 +57,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:text="ٍSara Salah"
+        android:text="Sara Salah"
         android:textSize="@dimen/medium_text_Size"
         android:layout_marginBottom="@dimen/small_margin"
         android:paddingTop="4dp"
         android:textColor="@color/White"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
 
     <TextView
         android:id="@+id/onLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Online"
+        android:text="@string/online"
         android:textColor="@color/White"
         android:paddingTop="24dp"
         android:textSize="@dimen/small_text_Size"
         app:layout_constraintEnd_toEndOf="@+id/name"
         app:layout_constraintTop_toTopOf="@id/name"
         app:layout_constraintStart_toStartOf="@+id/name"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
         tools:layout_editor_absoluteY="31dp" />
 
     <androidx.core.widget.NestedScrollView
@@ -102,13 +104,15 @@
                 style="@style/Telegram"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Account" />
+                android:text="@string/account"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 style="@style/normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="+0123456789" />
+                android:text="@string/_0123456789"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 style="@style/hint"
@@ -125,13 +129,13 @@
                 style="@style/normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SaraSallah" />
+                android:text="@SaraSallah"/>
 
             <TextView
                 style="@style/hint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Username" />
+                android:text="@string/username" />
 
             <View
                 android:layout_width="wrap_content"
@@ -142,13 +146,13 @@
                 style="@style/normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bio" />
+                android:text="@string/bio" />
 
             <TextView
                 style="@style/hint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add a few words about yourself" />
+                android:text="@string/add_a_few_words_about_yourself" />
 
             <View
                 android:layout_width="wrap_content"
@@ -159,26 +163,29 @@
                 style="@style/Telegram"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Setting" />
+                android:text="@string/setting" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/small_padding"
-                android:paddingBottom="@dimen/small_padding">
+                android:paddingBottom="@dimen/small_padding"
+                tools:ignore="UseCompoundDrawables">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_marginStart="@dimen/medium_margin"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/medium_margin"
-                    android:src="@drawable/chat"/>
+                    android:src="@drawable/chat"
+                    tools:ignore="ContentDescription"
+                    android:contentDescription="TODO" />
 
                 <TextView
                     style="@style/normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Chat Setting" />
+                    android:text="@string/chat_setting" />
 
             </LinearLayout>
 
@@ -205,7 +212,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:text="Privacy and Security" />
+                    android:text="@string/privacy_and_security" />
 
             </LinearLayout>
 
@@ -220,7 +227,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/small_padding"
-                android:paddingBottom="@dimen/small_padding">
+                android:paddingBottom="@dimen/small_padding"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -233,7 +241,7 @@
                     style="@style/normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Notifications and Sounds" />
+                    android:text="@string/notifications_and_sounds" />
 
             </LinearLayout>
 
@@ -274,13 +282,16 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/small_padding"
-                android:paddingBottom="@dimen/small_padding">
+                android:paddingBottom="@dimen/small_padding"
+                tools:ignore="UseCompoundDrawables">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_marginStart="@dimen/medium_margin"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/large_margin"
-                    android:src="@drawable/power"/>
+                    android:src="@drawable/power"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     style="@style/normal"
@@ -288,7 +299,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/small_padding"
                     android:paddingBottom="@dimen/small_padding"
-                    android:text="Power Saving" />
+                    android:text="@string/power_saving" />
 
             </LinearLayout>
 
@@ -316,7 +327,7 @@
                     style="@style/normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Chat Folders" />
+                    android:text="@string/chat_folders" />
 
             </LinearLayout>
 
@@ -343,7 +354,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:text="Devices" />
+                    android:text="Devices"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
 
@@ -367,10 +379,11 @@
 
                 <TextView
                     style="@style/normal"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Language" />
+                    android:text="@string/language"
+                    tools:ignore="HardcodedText" />
 
 
                 <TextView
@@ -379,7 +392,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:text="English" />
+                    android:text="@string/english" />
 
 
             </LinearLayout>
@@ -393,20 +406,23 @@
                 style="@style/Telegram"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Help" />
+                android:text="@string/help" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/small_padding"
-                android:paddingBottom="@dimen/small_padding">
+                android:paddingBottom="@dimen/small_padding"
+                tools:ignore="UseCompoundDrawables">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_marginStart="@dimen/medium_margin"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/medium_margin"
-                    android:src="@drawable/chatsetting"/>
+                    android:src="@drawable/chatsetting"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     style="@style/normal"
@@ -438,7 +454,7 @@
                     style="@style/normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Telegram FAQ" />
+                    android:text="@string/telegram_faq" />
 
             </LinearLayout>
 
@@ -452,19 +468,22 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/small_padding"
-                android:paddingBottom="@dimen/small_padding">
+                android:paddingBottom="@dimen/small_padding"
+                tools:ignore="UseCompoundDrawables">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_marginStart="@dimen/medium_margin"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/medium_margin"
-                    android:src="@drawable/privacyp"/>
+                    android:src="@drawable/privacyp"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     style="@style/normal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Privacy Policy" />
+                    android:text="@string/privacy_policy" />
 
             </LinearLayout>
 

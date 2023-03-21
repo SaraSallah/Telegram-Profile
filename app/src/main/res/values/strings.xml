@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">Telegram-Profile</string>
     <string name="sara_salah">Sara Salah</string>
+    <string name="username">Username</string>
+    <string name="english">English</string>
+    <string name="language">Language</string>
+    <string name="setting">Setting</string>
+    <string name="chat_setting">Chat Setting</string>
+    <string name="telegram_faq">Telegram FAQ</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="add_a_few_words_about_yourself">Add a few words about yourself</string>
+    <string name="bio">Bio</string>
+    <string name="power_saving">Power Saving</string>
+    <string name="chat_folders">Chat Folders</string>
+    <string name="online">Online</string>
+    <string name="privacy_and_security">Privacy and Security</string>
+    <string name="help">Help</string>
+    <string name="_0123456789">+0123456789</string>
+    <string name="account">Account</string>
+    <string name="notifications_and_sounds">Notifications and Sounds</string>
+
 </resources>
