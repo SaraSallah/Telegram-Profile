@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene2"
+    android:background="@color/back"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/profilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/gra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundPercent="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/icMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_more_vert"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/icBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="ٍSara Salah"
+        android:textSize="@dimen/medium_text_Size"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:paddingTop="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online"
+        android:textColor="@color/white"
+        android:paddingTop="24dp"
+        android:textSize="@dimen/small_text_Size"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@color/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBar"
+        tools:ignore="MissingConstraints,UnknownId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TextView
+                style="@style/Telegram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account" />
+
+            <TextView
+                style="@style/normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+0123456789" />
+
+            <TextView
+                style="@style/hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap to change phone number" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TextView
+                style="@style/normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SaraSallah" />
+
+            <TextView
+                style="@style/hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TextView
+                style="@style/normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bio" />
+
+            <TextView
+                style="@style/hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add a few words about yourself" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:background="@color/black" />
+
+            <TextView
+                style="@style/Telegram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Setting" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chat Setting" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Privacy and Security" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:paddingTop="@dimen/medium_padding" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications and Sounds" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data and Storage" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/small_padding"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:text="Power Saving" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chat Folders" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Devices" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Language" />
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="English" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:background="@color/black" />
+
+            <TextView
+                style="@style/Telegram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ask a Question" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telegram FAQ" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/small_padding">
+
+                <TextView
+                    style="@style/normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
+
+
