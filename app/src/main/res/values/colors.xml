@@ -6,9 +6,10 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#DDFFFFFF</color>
     <color name="dark">#1A394A</color>
-    <color name="back">#161D27</color>
-    <color name="telegram">#04A5F5</color>
+    <color name="back">#1D2733</color>
+    <color name="telegram">#6E9FD3</color>
     <color name="hint">#7A7676</color>
+    <color name="White">#FFFFFF</color>
 </resources>

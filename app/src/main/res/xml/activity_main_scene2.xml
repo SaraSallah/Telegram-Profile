@@ -33,11 +33,11 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             motion:layout_constraintBaseline_toBottomOf="parent"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="24dp"
             motion:layout_constraintStart_toStartOf="@id/icBack"
             android:id="@+id/profilePic"
             motion:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginLeft="40dp" />
         <Constraint
             motion:layout_constraintEnd_toEndOf="parent"
@@ -109,18 +109,18 @@
             android:layout_height="match_parent"
             motion:layout_constraintTop_toTopOf="@+id/topBar"
             motion:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="380dp" />
 
         <Constraint
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="380dp"
             android:layout_marginStart="0dp"
             motion:layout_constraintStart_toStartOf="parent"
             android:id="@+id/profilePic"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintEnd_toStartOf="@id/icMore"
             android:scaleX="1.7"
-            android:scaleY="1.3" />
+            android:scaleY="1.2" />
 
         <Constraint
             android:layout_width="wrap_content"
@@ -129,7 +129,7 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             android:id="@+id/name"
-            android:layout_marginTop="280dp" />
+            android:layout_marginTop="320dp" />
         <Constraint
             android:id="@+id/name"
             android:layout_width="wrap_content"
@@ -137,7 +137,7 @@
             android:layout_marginStart="8dp"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="300dp" />
+            android:layout_marginTop="330dp" />
         <Constraint
             android:id="@+id/number"
             motion:layout_constraintEnd_toEndOf="@+id/name"
