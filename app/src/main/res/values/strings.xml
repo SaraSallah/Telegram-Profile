@@ -18,5 +18,8 @@
     <string name="_0123456789">+0123456789</string>
     <string name="account">Account</string>
     <string name="notifications_and_sounds">Notifications and Sounds</string>
+    <string name="tap_to_change_phone_number">Tap to change phone number</string>
+    <string name="name">Sara Salah</string>
+    <string name="userName">SaraSallah</string>
 
 </resources>

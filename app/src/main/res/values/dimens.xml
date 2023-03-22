@@ -9,9 +9,7 @@
     <dimen name="large_text_Size">24dp</dimen>
     <dimen name="medium_text_Size">20dp</dimen>
     <dimen name="small_text_Size">16dp</dimen>
-
-
-
+    <dimen name="huge_dimen">32dp</dimen>
 
 
 </resources>

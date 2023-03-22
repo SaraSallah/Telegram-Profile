@@ -20,12 +20,12 @@
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/profilePic"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
         android:background="@drawable/image_circle"
         android:layout_marginTop="8dp"
-        android:src="@drawable/gra"
+        android:src="@drawable/graf"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:roundPercent="1.0"
@@ -35,7 +35,8 @@
         android:id="@+id/icMore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_marginTop="@dimen/large_margin"
         android:src="@drawable/ic_more_vert"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="ContentDescription,MissingConstraints" />
@@ -44,8 +45,8 @@
         android:id="@+id/icBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/large_margin"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -57,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:text="Sara Salah"
+        android:text="@string/name"
         android:textSize="@dimen/medium_text_Size"
         android:layout_marginBottom="@dimen/small_margin"
         android:paddingTop="4dp"
@@ -72,12 +73,14 @@
         android:layout_height="wrap_content"
         android:text="@string/online"
         android:textColor="@color/White"
-        android:paddingTop="24dp"
+        android:paddingTop="@dimen/large_padding"
+        android:paddingEnd="@dimen/small_padding"
+        android:layout_marginEnd="@dimen/huge_dimen"
         android:textSize="@dimen/small_text_Size"
         app:layout_constraintEnd_toEndOf="@+id/name"
         app:layout_constraintTop_toTopOf="@id/name"
         app:layout_constraintStart_toStartOf="@+id/name"
-        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry,SpUsage"
         tools:layout_editor_absoluteY="31dp" />
 
     <androidx.core.widget.NestedScrollView
@@ -118,7 +121,7 @@
                 style="@style/hint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tap to change phone number" />
+                android:text="@string/tap_to_change_phone_number" />
 
             <View
                 android:layout_width="wrap_content"
@@ -129,7 +132,7 @@
                 style="@style/normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@SaraSallah"/>
+                android:text="@string/userName"/>
 
             <TextView
                 style="@style/hint"
@@ -177,9 +180,7 @@
                     android:layout_marginStart="@dimen/medium_margin"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/medium_margin"
-                    android:src="@drawable/chat"
-                    tools:ignore="ContentDescription"
-                    android:contentDescription="TODO" />
+                    android:src="@drawable/chat"/>
 
                 <TextView
                     style="@style/normal"
